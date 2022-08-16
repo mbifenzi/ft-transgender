@@ -1,0 +1,29 @@
+.page-header{
+    background-color: white;
+    color: black;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.page-header2{
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.page-header3{
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.column-container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: left;
+    align-items: center;
+}

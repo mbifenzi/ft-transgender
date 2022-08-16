@@ -1,0 +1,6 @@
+{
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.runInTerminal": true
+}
