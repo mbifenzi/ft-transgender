@@ -1,7 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
+*{
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #202024;
     /* background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./coding.jpg); */
@@ -9,6 +14,8 @@ body{
     /* font-family: Poppins; */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    /* width: 100%; */
 }
 
 /* navbar shit  */
@@ -74,7 +81,7 @@ nav ul li a:hover{
 /* banner things  */
 
 section.head{
-    width: 100%;
+    width: auto;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -87,7 +94,7 @@ section.head{
 h1.header{
     font-family: 'Poppins';
     color: #f2f2f2;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
@@ -125,7 +132,7 @@ h2.header a{
     
     font-family: "Poppins";
     width: 100%;
-    height: 80vh;
+    height: auto;
     padding: 50px 0 0 0;
     margin: 0;
     text-align: center;
@@ -150,7 +157,7 @@ h2.header a{
     line-height: 2;
     font-family: Poppins;
     font-weight: "light" 300;
-    padding: 30px 120px;; 
+    padding:10% 20%;;   
 
 }
 
@@ -163,13 +170,108 @@ h2.header a{
     border-radius: 50%;
 }
 
+
 section.projects{
+    font-family: Poppins;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    color: #f2f2f2;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./projects.jpeg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./projects.jpeg);
     background-size: cover;
     background-position:  center;
     background-attachment: fixed;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.projects h1{
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 50px;
+    /* margin: 0; */
+}
+
+.project{
+    font-size: 40px;
+    display:flex;
+    height: auto;
+    justify-content: space-around;
+    /* min-height: 400px; */
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.quarter{
+    padding: 10px 0 0 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+    font-family: Poppins;
+    border: #f8f8f8;
+    border-style: solid;
+    transition: transform .5s;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: stretch;
+    text-align: center;
+    /* box-shadow: 20px 20px 50px rgb(0, 0, 0); */
+}
+
+.quarter:hover{
+    width: 100%;
+    transform: scale(0.9);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+    color: #fff;
+}
+
+.quarter p{
+    font-family: Poppins;
+    font-size: 26px;
+    line-height: 1.5;
+    padding: 20px 60px;
+}
+
+.quarter a{
+    display: block;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px 60px;
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+    border: #fff;
+    border-style: solid;
+    border-radius: 5px;
+    
+    border-width: 1px ;
+}
+
+.quarter a:hover{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+
+@media screen and (max-width: 768px){
+    .project{
+        /* font-size: 20px; */
+        flex-direction: column;
+    }
+    .text{
+        font-size: 24px;
+        padding: auto;
+    }
+    
 }
