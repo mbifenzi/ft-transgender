@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 body{
+    width: 100%;
     background-color: #202024;
     /* background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./coding.jpg); */
     background-size: cover;
@@ -211,9 +212,9 @@ section.projects{
 }
 
 .quarter{
-    padding: 10px 0 0 0;
+    padding: 10px;
     margin: auto;
-    width: 100%;
+    width: 30%;
     height: auto;
     /* text-align: center; */
     font-family: Poppins;
@@ -228,7 +229,7 @@ section.projects{
 }
 
 .quarter:hover{
-    width: 100%;
+    /* width: 100%; */
     transform: scale(0.9);
     background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
     box-shadow: 20px 20px 50px rgb(0, 0, 0);
@@ -240,15 +241,17 @@ section.projects{
     font-size: 26px;
     line-height: 1.5;
     padding: 20px 60px;
+    text-align: center;
 }
 
 .quarter a{
+    width: 50%;
     display: block;
     font-family: Poppins;
     font-size: 26px;
     font-weight: bold;
     line-height: 1.5;
-    padding: 20px 60px;
+    padding: 20px;
     margin: auto;
     text-decoration: none;
     color: #fff;
@@ -257,21 +260,116 @@ section.projects{
     border-radius: 5px;
     
     border-width: 1px ;
+    text-align: center;
 }
 
 .quarter a:hover{
     background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
 }
 
+/* contact us section ---------------------------------------------------------- */
+
+section.contact{
+    font-family: Poppins;
+    width: 100%;
+    height: 100vh;
+    color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./contact.jpeg);
+    background-size: cover;
+    background-position:  center;
+    background-attachment: fixed;
+    align-items: center;
+    box-sizing: border-box;
+    
+    /* filter: blur(5px); */
+}
+
+.contact h1{
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 10px;
+    /* margin: 0; */
+}
+.contact-content{
+    display: flex;
+}
+
+.contact-form{
+    background:#202024;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form, form input, form textarea{
+    padding: 10px;
+    border-radius:  10px;
+    outline:none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.socials{
+    width: 50%;
+    margin: 10px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+}
 
 @media screen and (max-width: 768px){
     .project{
         /* font-size: 20px; */
         flex-direction: column;
+        padding: 0px;
     }
     .text{
+        width:100%;
         font-size: 24px;
-        padding: auto;
+        padding:0;
+        
     }
+
+    .quarter{
+        width: 100%;
+        margin-top:10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quarter p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .quarter a{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     
 }
