@@ -82,11 +82,11 @@ nav ul li a:hover{
 /* banner things  */
 
 section.head{
-    width: auto;
+    width: 100%;
     height: 100vh;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./coding.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./images/coding.jpg);
     background-size: cover;
     background-position:  center;
     background-attachment: fixed;
@@ -179,12 +179,13 @@ section.projects{
     color: #f2f2f2;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./projects.jpeg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/projects.jpeg);
     background-size: cover;
     background-position:  center;
     background-attachment: fixed;
     align-items: stretch;
     box-sizing: border-box;
+
 }
 
 .projects h1{
@@ -194,7 +195,8 @@ section.projects{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 6px;
-    padding: 50px;
+    padding: 50px 0 50px 0;
+    float: center;
     /* margin: 0; */
 }
 
@@ -247,6 +249,7 @@ section.projects{
 .quarter a{
     width: 50%;
     display: block;
+    /* padding:  5px; */
     font-family: Poppins;
     font-size: 26px;
     font-weight: bold;
@@ -258,7 +261,7 @@ section.projects{
     border: #fff;
     border-style: solid;
     border-radius: 5px;
-    
+    justify-content: center;
     border-width: 1px ;
     text-align: center;
 }
@@ -276,7 +279,7 @@ section.contact{
     color: #f2f2f2;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./contact.jpeg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/contact.jpeg);
     background-size: cover;
     background-position:  center;
     background-attachment: fixed;
@@ -297,19 +300,27 @@ section.contact{
     /* margin: 0; */
 }
 .contact-content{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: inline-block;
 }
 
 .contact-form{
-    background:#202024;
-    width: 50%;
-    height: auto;
-    padding: 20px;
-    margin: 10px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    /* background:#202024; */
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .contact-form form{
@@ -326,16 +337,113 @@ section.contact{
     font-size: 16px;
 }
 
+form button{
+    padding: 15px;
+    font-size: 18px;
+    font-family: poppins;
+    border-radius: 30px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto 0;
+    width: 150px;
+    transition: transform .5s;
+
+}
+
+form button:hover{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.683));
+    transform: scale(1.1);
+    color: #f2f2f2;
+}
+
+.platforms {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    box-sizing: border-box;
+    /* align-items: center;
+    flex-direction: center;
+    justify-content: center; */
+}
+
+.platforms img{
+    width: 80px;;
+    height: 80px; 
+    
+    /* padding: 10px; */
+    margin-top: 40px;
+    box-sizing: border-box;
+    /* align-items: center; */
+    border: #f2f2f2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+}
+
+.platforms a{
+    cursor:pointer;
+    width: 80px;
+    margin: 10px;
+    padding: 0;
+    /* display:flex;   */
+    justify-content: center;
+    transition: all .5s;
+}
+
+.platforms a:hover{
+    transform: scale(0.9);
+    /* transform: rotate(360deg); */
+}
+
+.plateforms img:hover{
+    transform: scale(0.5);
+
+}
+
 .socials{
-    width: 50%;
+    width: 100%;
     margin: 10px;
     height: auto;
-    padding: 20px;
+    padding: 20px 0 20px 250px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.connect{
+    width: 100%;
+    height: auto;
+    padding: 10px 0 0 0 ;
+    margin: 0;
+    display:flex;
+}
+
+.connect img{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 0;
+    border: #fff;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+}
+.connect p {
+    /* width: 100%; */
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 5px;
+    /* margin : auto; */
+    /* text-align: center; */
+    /* justify-content: center; */
 }
 
 @media screen and (max-width: 768px){
@@ -356,6 +464,7 @@ section.contact{
         margin-top:10px;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .quarter p{
@@ -364,12 +473,45 @@ section.contact{
     }
 
     .quarter a{
+        display: inline-block;
+        width: 200px;
         padding: 0;
         margin: 0;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-
-    
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+    .socials{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+    .socials p{
+        text-align: center;
+    }
+    .connect {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* padding-left: 120px; */
+        padding:0;
+        order: 2;
+    }
+    .platforms{
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+    section.contact{
+        height: auto;
+        /* background-attachment: fixed; */
+    }
 }
